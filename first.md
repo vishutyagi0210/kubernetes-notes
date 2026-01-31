@@ -30,3 +30,25 @@ tcpdump -c 2 > filename # save in file these output.
 tcpdump -i <interface_name> -c 2 > filename # check from a specific interface
 
 ```
+
+# most important 
+```bash
+ctr # specificely for container d 
+crictl # it is beging used to talk to pod direct it works on container level
+crictl pods # it returns the name of running pods
+crictl ps -a # it returns the id only
+crictl logs <id>
+
+journalctl  # it gives logs from since the machine will be on.
+journalctl --no-pager # it gives everything in one page
+journalctl --since yesterday 
+journalctl --since yesterday -o json-preety # it provide ... in json-pretty output.
+```
+
+## kubernetese release cycle. 4 month 
+
+https://endoflife.date/kubernetes
+https://kubernetes.io/releases/release/
+
+1. feature discussion
+2.  
