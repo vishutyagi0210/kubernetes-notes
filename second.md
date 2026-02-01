@@ -80,7 +80,7 @@ major three components
 ## kube-proxy
 The main task of kube-proxy is to map the ip's service and pod
 
-Drivers: CRI (container runtime interface ) , CSI ( container storage interface ) , CNI ( container network interface )
+Drivers: CRI (container runtime interface ) , CSI ( container storage interface ) , CNI ( container network interface ) 
 
 
 Now after having all the green checks now.. kubelet came into picture
@@ -90,7 +90,7 @@ it gives signal to CRI ( container runtime interface ) then CRI can be anything 
 then this cri do is.. it do OCI (set of parameters) has it's runc nwo CRI tells runc that create the container for me. Now it creates Cgroups [ nothing but cpu , memory ] and provide isolation. Now, it creates the container.. deployed Now, it gives it to kubelet now kubelet pass the application workload... that it happening.
 runc ( solomon hikes created this )- is in GO language then beucase of limitations crun came up it created in C created by redhat
 
-Q/a what is the difference between? 
+Q/a what is the difference between?  runc crun
 Q/a is CRI creates the container?
 
 
